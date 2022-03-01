@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>218</width>
-    <height>93</height>
+    <height>115</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,6 +26,16 @@
       </property>
      </widget>
     </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>현재 설정 값 :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -37,10 +47,11 @@
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_exit">
+   <widget class="QMenu" name="menu">
     <property name="title">
      <string>파일</string>
     </property>
+    <addaction name="action_exit"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -48,13 +59,18 @@
     </property>
     <addaction name="action_rangesetting"/>
    </widget>
-   <addaction name="menu_exit"/>
+   <addaction name="menu"/>
    <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action_rangesetting">
    <property name="text">
     <string>거리설정</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>끝내기</string>
    </property>
   </action>
  </widget>
